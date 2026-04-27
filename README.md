@@ -3,7 +3,15 @@
 ## 📌 Overview
 
 This project provisions a production-ready static website infrastructure on AWS using Terraform. It combines Amazon S3 for storage and CloudFront as a CDN layer, following best practices for security and scalability.
+## 🌍 Live Demo 🚀
+The project is live here 👉 d1jskvl1ulsdp8.cloudfront.net
 
+This project provisions a **full production-grade AWS infrastructure** using Terraform with a complete CI/CD pipeline.
+# 🏗️ Architecture Diagram
+<p align="center">
+  <img src="assets/architecture.png" width="900"/>
+</p>
+---
 ---
 
 ## 🏗️ Architecture
