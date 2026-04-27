@@ -101,6 +101,15 @@ terraform apply
 ```
 
 ---
+## 🚀 CI/CD Pipeline
+
+This project uses **GitHub Actions** for automated deployment.
+
+### Workflow:
+1.  **Infrastructure Check:** On every Pull Request, Terraform runs `fmt` and `plan` to ensure the code is valid.
+2.  **Infrastructure Deployment:** When merged to `main`, Terraform runs `apply` to update AWS resources.
+3.  **Frontend Sync:** After infra is ready, the files in `/website-files` are synced to S3.
+4.  **Cache Invalidation:** CloudFront is automatically invalidated so the new version is live instantly.
 
 ## 🔐 Security Best Practices
 
